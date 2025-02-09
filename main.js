@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 // Konfigurasi API
-const BASE_URL = "https://bles.network"; // Ganti dengan Base URL yang benar
+const BASE_URL = "https://bless.network"; // Ganti dengan Base URL yang benar
 const NODE_ID = "12D3KooWGkV18YBAKSSam7YSPhUvPixnrgNYHSebc4DX8Ki9sZ4S"; // Node ID
 const API_ENDPOINT = `${BASE_URL}/api/v1/nodes/${NODE_ID}`;
 const REFRESH_INTERVAL = 2 * 60 * 1000; // Interval 2 menit
