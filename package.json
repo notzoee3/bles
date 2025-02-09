@@ -1,7 +1,7 @@
 {
-  "name": "node-monitoring",
+  "name": "bless-monitoring",
   "version": "1.0.0",
-  "description": "Script untuk monitoring Node ID dengan interval 2 menit",
+  "description": "Script untuk monitoring Node ID di Bless Network",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
