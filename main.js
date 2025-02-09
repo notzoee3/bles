@@ -2,18 +2,18 @@ const axios = require("axios");
 const fs = require("fs");
 
 // Konfigurasi API
-const BASE_URL = "https://gateway-run.bls.dev/api/v1"; // Ganti dengan Base URL yang benar
-const NODE_ID = "12D3KooWGkV18YBAKSSam7YSPhUvPixnrgNYHSebc4DX8Ki9sZ4S"; // Node ID
-const API_ENDPOINT = `${BASE_URL}/api/v1/nodes/${NODE_ID}`;
+const BASE_URL = "https://gateway-run.bls.dev/api/v1"; // Base URL API Bless Network
+const NODE_ID = "12D3KooWGkV18YBAKSSam7YSPhUvPixnrgNYHSebc4DX8Ki9sZ4S"; // Ganti dengan Node ID kamu
+const API_ENDPOINT = `${BASE_URL}/nodes/${NODE_ID}`; // Endpoint untuk monitoring node
 const REFRESH_INTERVAL = 2 * 60 * 1000; // Interval 2 menit
-const LOG_FILE = "monitor_log.txt";
+const LOG_FILE = "monitor_log.txt"; // Nama file log
 
 // Fungsi untuk mengecek status node
 async function checkNodeStatus() {
     try {
         const response = await axios.get(API_ENDPOINT);
         const data = response.data; // Data dari API
-        const status = data.status || "unknown"; // Status node
+        const status = data.status || "unknown"; // Ambil status dari response
         const timestamp = new Date().toISOString();
 
         // Log ke terminal
