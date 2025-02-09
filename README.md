@@ -2,6 +2,6 @@
 
 ```
 git clone https://github.com/notzoee3/bles.git
-cd bless
+cd bles
 npm init -y
 ```
