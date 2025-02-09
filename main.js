@@ -3,7 +3,7 @@ const fs = require("fs");
 
 // Konfigurasi
 const NODES = [
-    { id: "node_12345", session: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Nzg5MjIyZmNkYzNiMzhiNzA1YjUyNTYiLCJwdWJsaWNBZGRyZXNzIjoiNExQM0QzeWQ5MjhYTmI2S3NGTXl1N2QyallMaGFLV0ZDZ2hIeFdYdm1Ra2MiLCJ3YWxsZXRUeXBlIjoic29sYW5hIiwiaWF0IjoxNzM3MDQxMDA5LCJleHAiOjE3Njg1OTg2MDl9.L25xEpgSQT97" },
+    { id: "12D3KooWGkV18YBAKSSam7YSPhUvPixnrgNYHSebc4DX8Ki9sZ4S", session: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Nzg5MjIyZmNkYzNiMzhiNzA1YjUyNTYiLCJwdWJsaWNBZGRyZXNzIjoiNExQM0QzeWQ5MjhYTmI2S3NGTXl1N2QyallMaGFLV0ZDZ2hIeFdYdm1Ra2MiLCJ3YWxsZXRUeXBlIjoic29sYW5hIiwiaWF0IjoxNzM3MDQxMDA5LCJleHAiOjE3Njg1OTg2MDl9.L25xEpgSQT97" },
 ]; // Tambahkan node ID dan session ID sesuai kebutuhan
 
 const PING_URL = "https://google.com/ping"; // Ganti dengan endpoint ping yang sesuai
